@@ -43,3 +43,20 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 
 // Shall we begin?
+
+let navigation = document.querySelector('nav');
+navigation.children[0].textContent = "Services";
+navigation.children[1].textContent = "Product";
+navigation.children[2].textContent = "Vision";
+navigation.children[3].textContent = "Features";
+navigation.children[4].textContent = "About";
+navigation.children[5].textContent = "Contact";
+
+let title = document.querySelector('h1');
+title.textContent = "DOM IS AWESOME";
+
+let button = document.querySelector('button');
+button.textContent = "Get Started";
+
+let ctaImg = document.getElementById('cta-img');
+ctaImg.setAttribute('src', "./img/header-img.png");
