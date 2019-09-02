@@ -53,10 +53,27 @@ navigation.children[4].textContent = "About";
 navigation.children[5].textContent = "Contact";
 
 let title = document.querySelector('h1');
-title.textContent = "DOM IS AWESOME";
+title.innerHTML = "DOM </br> IS </br> AWESOME";
 
 let button = document.querySelector('button');
 button.textContent = "Get Started";
 
 let ctaImg = document.getElementById('cta-img');
 ctaImg.setAttribute('src', "./img/header-img.png");
+
+let mainContentHeaders = Array.from(document.querySelectorAll('h4'));
+mainContentHeaders[0].textContent = "Features";
+mainContentHeaders[1].textContent = "About";
+mainContentHeaders[2].textContent = "Services";
+mainContentHeaders[3].textContent = "Product";
+mainContentHeaders[4].textContent = "Vision";
+
+let mainContentParagraphs = Array.from(document.querySelectorAll('p'));
+mainContentParagraphs[0].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+mainContentParagraphs[1].textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+mainContentParagraphs[2].textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+mainContentParagraphs[3].textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+mainContentParagraphs[4].textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+let middleImage = document.getElementById('middle-img');
+middleImage.setAttribute('src', './img/mid-page-accent.jpg');
