@@ -77,3 +77,13 @@ mainContentParagraphs[4].textContent = "Vision content elementum magna eros, ac 
 
 let middleImage = document.getElementById('middle-img');
 middleImage.setAttribute('src', './img/mid-page-accent.jpg');
+
+let contact = document.querySelector('.contact');
+contact.children[0].textContent = 'Contact';
+contact.children[1].innerHTML = '123 Way 456 Street <br>Somewhere, USA';
+contact.children[2].textContent = '1 (888) 888-8888';
+contact.children[3].textContent = 'sales@greatidea.io';
+
+let footer = document.querySelector('footer p');
+footer.textContent = 'Copyright Great Idea! 2018';
+
